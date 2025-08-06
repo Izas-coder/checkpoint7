@@ -1,4 +1,6 @@
 # checkpoint7
+
+
 function multiplicaSumas(num1, num2, num3, num4) {
     // Sumas de los dos primeros y los dos segundos números
     const sum1 = num1 + num2;
