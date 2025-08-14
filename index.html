@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>index.html</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Checkpoint 7: JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    section {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #005f73;
+    }
+
+    pre {
+      background: #eee;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    img {
+      margin-top: 10px;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Checkpoint 7: JavaScript</h1>
+
+  <section>
+    <h2>1. ¿Qué diferencia a JavaScript de cualquier otro lenguaje de programación?</h2>
+
+    <p>JavaScript se ejecuta principalmente en navegadores web, permitiendo interactividad sin instalar nada. Es interpretado, dinámico y soporta programación orientada a objetos, funcional y basada en eventos.</p>
+
+    <img src="https://media.istockphoto.com/id/1156837650/es/foto/pantalla-de-visualizaci%C3%B3n-de-componentes-del-editor-de-texto-de-internet-de-programaci%C3%B3n-de.jpg?s=612x612&w=0&k=20&c=0EIVIPKvUDqYeerRWxO3DJ8_WojrJBm7jxxsGkumRrE=" alt="Imagen relacionada" width="300" style="display:block; margin:10px auto;">
+
+    <h3>1. JavaScrit se está volviendo muy popular por diferentes razones</h3>
+
+    <h4>Es como un idioma universal para crear sitios web</h4>
+
+    <p>Imagínate que JavaScript es como el inglés del mundo digital. Una de las principales razones por las que es tan popular es porque sirve para crear todo tipo de cosas en internet.
+      Piensa en una tienda online: JavaScript puede crear tanto la parte que tú ves (el diseño bonito, los botones que haces clic, las animaciones) como la parte invisible que hace que todo funcione por detrás (como procesar tu pedido o calcular el precio total). Es como tener una herramienta que te sirve tanto para decorar tu casa como para arreglar la fontanería.
+      Esta capacidad de hacer "todo en uno" es muy valiosa para las empresas, porque pueden usar una sola herramienta en lugar de varias diferentes.
+
+    <p><b>Técnicamente:</b> JavaScript es un lenguaje de pila completa (full-stack language) que puede utilizarse tanto para desarrollo front-end como back-end. Esto significa que puede manejar todo el proceso de desarrollo de software.</p>
+    <p>
+    <ul>
+      <li><b>Front-end:</b> La parte visible de una aplicación web (interfaces de usuario interactivas y dinámicas)</li>
+      <li><b>Back-end:</b> La parte del servidor que maneja la lógica, bases de datos y procesamiento</li>
+      <li><b>Pila completa (Full-stack):</b> Capacidad de trabajar en todas las capas de una aplicación</li>
+    </ul>
+    </p>
+    <h4>Es relativamente fácil de aprender </h4>
+    <p>JavaScript está diseñado para ser más amigable que otros lenguajes de programación. Es como comparar aprender a conducir un coche automático versus uno manual: JavaScript es el automático del mundo de la programación.
+      Además, tiene muchísimas "herramientas prefabricadas" (llamadas bibliotecas y frameworks) que son como plantillas o moldes que facilitan el trabajo. Es como tener un kit de IKEA con instrucciones claras en lugar de tener que construir un mueble desde cero.</p>
+    <h4>Funciona en cualquier navegador</h4>
+    <p>¿Has notado que puedes abrir una página web tanto en Chrome como en Safari o Firefox y funciona igual? Eso es gracias a JavaScript. Es compatible con todos los navegadores principales, sin necesidad de instalar programas adicionales.
+      Es como escribir una carta en español: cualquier persona que hable español podrá leerla, sin importar si vive en España, México o Argentina.</p>
+    <h4>Cada vez es más rápido y potente</h4>
+    <p>En los últimos años, JavaScript se ha vuelto mucho más rápido y eficiente. Antes solo se usaba para cosas sencillas, pero ahora puede manejar aplicaciones complejas como videojuegos online, aplicaciones de video en tiempo real, o sistemas que procesan miles de datos al mismo tiempo.
+      Es como la evolución de los teléfonos: antes solo servían para llamar, ahora son computadoras en tu bolsillo. </p>
+
+    <h3>Conclusión</h3>
+
+    <p>JavaScript combina <b>versatilidad técnica</b> con <b>facilidad de uso</b>, lo que explica su adopción masiva. Para los desarrolladores, representa una herramienta que puede manejar todo el stack tecnológico, mientras que para las empresas significa eficiencia y agilidad en sus proyectos de transformación digital. </p>
+
+  </section>
+
+  <section>
+    <h2>2. ¿Cuáles son algunos tipos de datos JS?</h2>
+    <p>En JavaScript, los tipos de datos se dividen en <b>primitivos </b> y <b>de referencia </b>.
+      Te lo explico de forma clara y con ejemplos para que lo puedas usar en tu trabajo.</p>
+    <img src="https://media.istockphoto.com/id/1471316428/es/foto/dise%C3%B1o-de-interfaz-de-usuario-optimizaci%C3%B3n-de-c%C3%B3digo-codificaci%C3%B3n.jpg?s=612x612&w=0&k=20&c=4jYBb0cbTFlFDUI7fuwBJEgLzkj-2tQmk5b7tUcH3Lc=" alt="Imagen relacionada" width="300" style="display:block; margin:10px auto;">
+
+    <h3>Tipos de datos primitivos:</h3>
+    <ul>
+      <li><strong>String</strong> → cadenas de texto (<code>"Hola"</code>)</li>
+      <li><strong>Number</strong> → números enteros o decimales (<code>42</code>, <code>3.14</code>)</li>
+      <li><strong>Boolean</strong> → valores lógicos (<code>true</code> o <code>false</code>)</li>
+      <li><strong>Undefined</strong> → variable declarada pero sin valor asignado</li>
+      <li><strong>Null</strong> → valor intencionalmente vacío</li>
+      <li><strong>Symbol</strong> → identificadores únicos (ES6)</li>
+      <li><strong>BigInt</strong> → números enteros muy grandes (ES2020)</li>
+    </ul>
+
+    <h3>Tipos de datos de referencia:</h3>
+    <ul>
+      <li><strong>Object</strong> → colecciones de datos (<code>{ clave: valor }</code>)</li>
+      <li><strong>Array</strong> → listas ordenadas (<code>[1, 2, 3]</code>)</li>
+      <li><strong>Function</strong> → bloques de código reutilizables</li>
+      <li>Otros: <code>Date</code>, <code>Map</code>, <code>Set</code>, etc.</li>
+    </ul>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg" alt="Logo JavaScript" width="150" style="display:block; margin:10px auto;">
+
+    <pre><code>
+// Ejemplo de varios tipos de datos en JS
+let nombre = "Ana";           // String
+let edad = 25;                // Number
+let esMayor = true;           // Boolean
+let dato;                     // Undefined
+let vacio = null;             // Null
+let id = Symbol("id");        // Symbol
+let numeroGrande = 123n;      // BigInt
+let persona = { nombre: "Ana", edad: 25 }; // Object
+  </code></pre>
+  </section>
+  <section>
+    <h2>3. Métodos fundamentales para trabajar con Strings en JavaScript</h2>
+
+    <p>
+      Manipular texto es una de las tareas más comunes en programación web.
+      Aquí veremos tres herramientas esenciales: <strong>.length</strong>,
+      <strong>.substring()</strong> y <strong>.toLowerCase() / .toUpperCase()</strong>.
+    </p>
+
+    <img src="https://media.istockphoto.com/id/1322205575/es/foto/toma-mejorada-digitalmente-de-dos-guapos-hombres-de-negocios-que-trabajan-en-la-oficina.jpg?s=612x612&w=0&k=20&c=LwEM2ve2Y-_KMfneS4WkyhjpGJE8dERTBSOsegyInxw=" alt="Logo JavaScript" width="300" style="display:block; margin:10px auto;">
+
+    <h3>1. <code>.length</code> – Contar caracteres</h3>
+    <p>
+      Es como usar una regla para medir la longitud de una palabra o frase.
+      Cuenta <strong>todos</strong> los caracteres: letras, espacios, números y símbolos.
+    </p>
+    <pre><code class="language-javascript">
+// Ejemplo .length
+let nombre = "JavaScript";
+console.log(nombre.length); // 10
+
+let frase = "Hola Mundo";
+console.log(frase.length); // 10 (incluye el espacio)
+  </code></pre>
+    <p><strong>Uso:</strong> Validar contraseñas, limitar caracteres en tweets o formularios.</p>
+
+    <h3>2. <code>.substring()</code> – Cortar pedazos de texto</h3>
+    <p>
+      Es como usar unas tijeras para extraer la parte que necesitas.
+      Se indica desde dónde empezar y dónde terminar (el final no se incluye).
+    </p>
+    <ul>
+      <li>Los índices empiezan en 0</li>
+      <li>substring(inicio, fin) → el final no se incluye</li>
+      <li>Si omites el segundo parámetro, corta hasta el final</li>
+    </ul>
+    <pre><code class="language-javascript">
+// Ejemplo .substring()
+let email = "usuario@ejemplo.com";
+let nombreUsuario = email.substring(0, 7); // "usuario"
+let dominio = email.substring(8); // "ejemplo.com"
+
+let fecha = "2024-03-15";
+let año = fecha.substring(0, 4); // "2024"
+let mes = fecha.substring(5, 7); // "03"
+  </code></pre>
+
+    <h3>3. <code>.toLowerCase()</code> y <code>.toUpperCase()</code> – Cambiar mayúsculas/minúsculas</h3>
+    <p>
+      Son como un interruptor para convertir texto a <strong>todo minúsculas</strong> o <strong>todo mayúsculas</strong>.
+      Muy útiles para comparar y normalizar datos.
+    </p>
+    <pre><code class="language-javascript">
+// Ejemplo .toLowerCase() y .toUpperCase()
+let nombre = "MARÍA GONZÁLEZ";
+let nombreNormalizado = nombre.toLowerCase(); // "maría gonzález"
+
+let grito = "ayuda";
+let gritoFuerte = grito.toUpperCase(); // "AYUDA"
+
+// Comparación sin importar mayúsculas
+let respuesta1 = "SI";
+let respuesta2 = "si";
+if (respuesta1.toLowerCase() === respuesta2.toLowerCase()) {
+    console.log("Las respuestas son iguales");
+}
+  </code></pre>
+
+    <h3>Casos prácticos combinando estos métodos:</h3>
+    <ol>
+      <li>
+        <strong>Validación de contraseñas:</strong>
+        <pre><code class="language-javascript">
+let contraseña = document.getElementById("password").value;
+if (contraseña.length < 8) {
+    alert("La contraseña debe tener al menos 8 caracteres");
+}
+      </code></pre>
+      </li>
+      <li>
+        <strong>Procesar emails:</strong>
+        <pre><code class="language-javascript">
+let email = "Usuario@EJEMPLO.COM";
+let emailLimpio = email.toLowerCase(); // "usuario@ejemplo.com"
+let usuario = emailLimpio.substring(0, emailLimpio.indexOf("@"));
+      </code></pre>
+      </li>
+      <li>
+        <strong>Formatear nombres:</strong>
+        <pre><code class="language-javascript">
+let nombreCompleto = "JUAN PÉREZ LÓPEZ";
+let apellido = nombreCompleto.substring(5, 10); // "PÉREZ"
+let apellidoFormateado = apellido.toLowerCase(); // "pérez"
+      </code></pre>
+      </li>
+    </ol>
+
+    <p>
+      <strong>En resumen:</strong>
+      Estos tres métodos son como las herramientas básicas de un carpintero: simples individualmente,
+      pero poderosas al combinarlas.
+    </p>
+
+  </section>
+
+  <section>
+    <h2>4. Condicionales en JavaScript: Tomando Decisiones</h2>
+
+    <img src="https://cdn.pixabay.com/photo/2023/11/05/02/07/ai-generated-8366100_1280.jpg" width="300" style="display:block; margin:10px auto;">
+    <p>
+      <!-- Tu respuesta aquí -->
+    </p>
+    <section>
+      <h2></h2>
+
+      <p><strong>En términos simples:</strong> Los <span class="terminologia">condicionales</span> son como los semáforos del código. Permiten que tu programa tome diferentes caminos según las circunstancias.</p>
+      <p><strong>Técnicamente:</strong> Son <span class="terminologia">estructuras de control</span> que evalúan una <span class="terminologia">condición</span> (verdadero o falso) y ejecutan diferentes bloques de código según el resultado.</p>
+
+      <strong>Analogía de la vida real:</strong> Es como cuando decides qué ropa ponerte. Si llueve, te pones impermeable. Si hace sol, te pones camiseta. Si hace frío, te pones abrigo. Los condicionales funcionan exactamente igual.
+
+      <h3>1. El condicional if - "Si esto, entonces aquello"</h3>
+
+      <p>La estructura condicional más básica es <b>if</b> (si). Evalúa si algo es verdadero, y si lo es, ejecuta el código dentro de las llaves { }.</p>
+
+      <pre><code class="language-javascript">
+if (condición) {
+    // Código que se ejecuta si la condición es verdadera
+}</code></pre>
+
+      <h4>Ejemplo práctico: Control de acceso</h4>
+      <p>Imagina un control de acceso a un club nocturno:</p>
+
+      <pre><code class="language-javascript">
+     
+let edad = 20;
+
+if (edad >= 18) {
+    console.log("Puede entrar al club");
+}
+</code></pre>
+
+      <h3>2. if-else - "Si no, entonces esto otro"</h3>
+
+      <p>Muchas veces necesitas hacer algo cuando la condición NO se cumple. Para eso usamos <b>else</b> (si no).</p>
+
+      <pre><code class="language-javascript">   
+if (condición) {
+    // Se ejecuta si es verdadero
+} else {
+    // Se ejecuta si es falso
+} </code></pre>
+
+      <h4>Ejemplo: Decidir actividades según el clima</h4>
+
+      <pre><code class="language-javascript">        
+let clima = "soleado";
+
+if (clima === "lluvioso") {
+    console.log("Quedarse en casa viendo Netflix");
+} else {
+    console.log("Salir a caminar al parque");
+}</code></pre>
+
+      <h3>3. else if - "Si no esto, prueba esto otro"</h3>
+
+      <p>Cuando tienes múltiples opciones, usas <b>else if</b>. Es como tener varias puertas y probar una por una hasta encontrar la correcta.</p>
+
+      <pre><code class="language-javascript">    
+if (condición1) {
+    // Opción 1
+} else if (condición2) {
+    // Opción 2
+} else if (condición3) {
+    // Opción 3
+} else {
+    // Opción por defecto
+}</code></pre>
+
+      <h4>Ejemplo: Sistema de calificaciones</h4>
+
+      <pre><code class="language-javascript">
+let puntuacion = 85;
+
+if (puntuacion >= 90) {
+    console.log("Excelente - Sobresaliente");
+} else if (puntuacion >= 80) {
+    console.log("Muy bien - Notable");
+} else if (puntuacion >= 70) {
+    console.log("Bien - Aprobado");
+} else {
+    console.log("Necesitas estudiar más");
+}
+</code></pre>
+
+      <h3>4. Operadores de Comparación</h3>
+
+      <p>Para crear condiciones, necesitas <b>operadores condicionales</b></p>
+      <ul>
+        <li><code>===</code> - Exactamente igual</li>
+        <li><code>!==</code> - Diferente</li>
+        <li><code>></code> - Mayor que</li>
+        <li><code>
+            << /code> - Menor que</li>
+        <li><code>>=</code> - Mayor o igual</li>
+        <li><code>
+            <=< /code> - Menor o igual</li>
+      </ul>
+      <p>Para combinar o modificar varias condiciones dentro de un mismo <code>if</code>, usamos <b>operadores lógicos</b>:</p>
+      <ul>
+        <li><code>&&</code> (AND / "y") → Todas las condiciones deben ser verdaderas</li>
+        <li><code>||</code> (OR / "o") → Basta con que una condición sea verdadera</li>
+        <li><code>!</code> (NOT / "no") → Invierte el valor lógico</li>
+      </ul>
+
+      <h4>Ejemplo: Sistema de descuentos en tienda online</h4>
+
+      <pre><code class="language-javascript">       
+let totalCompra = 120;
+let esClienteVIP = true;
+
+if (totalCompra >= 100 && esClienteVIP === true) {
+    console.log("Descuento del 20%! Total: " + (totalCompra * 0.8) + "€");
+} else if (totalCompra >= 100) {
+    console.log("Descuento del 10%! Total: " + (totalCompra * 0.9) + "€");
+} else {
+    console.log("Total: " + totalCompra + "€");
+}
+ </code></pre>
+      <p> Este ejemplo combina múltiples ramas (if, else if, else) y operadores lógicos.</p>
+      <ul>
+        <li>En el primer if usamos && para comprobar que dos condiciones se cumplan al mismo tiempo:</li>
+
+        <li>El total sea mayor o igual a 100</li>
+
+        <li>El cliente sea VIP</li>
+      </ul>
+      <p>Si una de esas dos condiciones no se cumple, el bloque no se ejecuta y se pasa a la siguiente rama. </p>
+
+      <h3>5. Condicionales Anidados</h3>
+
+      <p>Puedes poner condicionales dentro de otros condicionales, como muñecas rusas.</p>
+
+      <h4>Ejemplo: Sistema de seguridad del coche</h4>
+
+      <pre><code class="language-javascript">
+let tieneLicencia = true;
+let edad = 25;
+let estaEbrio = false;
+
+if (tieneLicencia === true) {
+    if (edad >= 18) {
+        if (estaEbrio === false) {
+            console.log("Puede conducir!");
+        } else {
+            console.log("No puede conducir - Estado no apto");
+        }
+    } else {
+        console.log("Muy joven para conducir");
+    }
+} else {
+    console.log("Necesita licencia de conducir");
+}
+</code></pre>
+
+      <h4>Conceptos clave aprendidos:</h4>
+      <ul>
+        <li><b>Estructura condicional</b>: Control de flujo del programa</li>
+        <li><b>Condición</b>: Expresión que evalúa verdadero o falso</li>
+        <li><b>Operadores de comparación</b>: Herramientas para crear condiciones</li>
+        <li><b>Bloques de código</b>: Instrucciones dentro de llaves { }</li>
+        <li><b>Anidación</b>: Condicionales dentro de otros condicionales</li>
+      </ul>
+
+      <h4>Resumen con analogía</h4>
+      <p>Los condicionales son como ser un <strong>detective</strong>:</p>
+      <ul>
+        <li><strong>IF</strong> = "Si encuentro esta pista..."</li>
+        <li><strong>ELSE IF</strong> = "Si no, pero encuentro esta otra..."</li>
+        <li><strong>ELSE</strong> = "Si no encuentro nada de eso..."</li>
+      </ul>
+      <p>Cada pista te lleva a una conclusión diferente, igual que cada condición lleva a ejecutar código diferente.</p>
+
+    </section>
+
+  </section>
+
+  <section>
+    <h2>5. ¿Qué es un operador ternario?</h2>
+
+    <img src="https://cdn.pixabay.com/photo/2024/06/11/13/57/code-8823282_1280.png" alt="Imagen relacionada" width="300" style="display:block; margin:10px auto;">
+    <p>El operador ternario es una forma concisa de escribir una declaración if-else en una sola línea. Se compone de tres partes:</p>
+    <ul>
+      <li>La condición a evaluar (condición booleana) </li>
+      <li>El valor si la condición es verdadera (valor verdadero) </li>
+      <li>El valor si la condición es falsa (valor falso) </li>
+    </ul>
+
+    <p>El operador ternario en Java es una construcción que permite tomar decisiones basadas en una condición booleana de manera concisa en una sola línea de código. <b>Una condición booleana es</b> una pregunta cuya respuesta solo puede ser verdadero (true) o falso (false).
+      Es como un interruptor de luz: o está encendido (true) o está apagado (false), no hay términos medios.</p>
+    <p>Es una forma abreviada de expresar una estructura condicional (if-else). </p>
+    <p>Este operador <b>se compone de tres partes</b>: la condición a evaluar, el valor que se asigna si la condición es verdadera y el valor que se asigna si la condición es falsa. </p>
+
+    <p>
+      La sintaxis que utiziarimos es la siguiente:</p>
+    <pre><code>
+   condición ? valor_si_verdadero : valor_si_falso;
+    </code></pre>
+
+    <p>Por ejemplo en java: </p>
+    <pre><code class="language-javascript">
+int edad = 20;
+String mensaje = (edad >= 18) ? "Eres mayor de edad" : "Eres menor de edad";
+System.out.println(mensaje);
+    </code></pre>
+    <ul>
+      <li><b>condición</b> → edad >= 18</li>
+      <li><b>valor_si_verdadero</b> → "Puede entrar" </li>
+      <li><b>valor_si_falso</b> → "No puede entrar" </li>
+    </ul>
+    <p>La <b>elección</b> entre el <b>operador ternario</b> y la declaración <b>if-else</b> depende principalmente de la complejidad y la legibilidad del código que estés escribiendo. </p>
+    <p>El operador ternario <b>es útil para simplificar la escritura de expresiones condicionales simple</b>s. Y es que, aunque el operador ternario en Java permite escribir código más compacto, en algunos casos puede afectar la legibilidad si se usa en expresiones muy largas. Para mejorar la organización del código, una buena práctica es encapsular la lógica dentro de una función. </P>
+  </section>
+
+  <section>
+    <h2>6. Declaración de Función vs Expresión de Función</h2>
+    <p>
+      <!-- Tu respuesta aquí -->
+    </p>
+    <img src="https://cdn.pixabay.com/photo/2020/12/27/12/31/programmer-5863772_1280.jpg" alt="Imagen relacionada" width="300" style="display:block; margin:10px auto;">
+
+    <p>En JavaScript podemos crear funciones de dos formas principales:
+      <strong>Declaración de Función</strong> y <strong>Expresión de Función</strong>.
+      Ambas sirven para hacer lo mismo (crear un bloque de código que podemos reutilizar), pero funcionan de forma distinta.
+    </p>
+
+    <h3>1. Declaración de Función</h3>
+    <p>Escribir una función como una “instrucción independiente” en el código.
+      El motor de JavaScript la “prepara” antes de que el código empiece a ejecutarse, por lo que se puede usar incluso antes de escribirla en el archivo.</p>
+
+    <h4>Ejemplo cotidiano:</h4>
+    <p>Es como tener el teléfono de un amigo ya guardado en tu agenda: puedes llamarle cuando quieras, incluso antes de pensar en ello.</p>
+
+    <pre><code class="language-javascript">
+// Declaración de función
+saludar("Ana"); // Funciona aunque esté antes de la definición
+
+function saludar(nombre) {
+    console.log(`Hola, ${nombre}`);
+}
+</code></pre>
+
+    <h3>2. Expresión de Función</h3>
+    <p>Es cuando guardamos una función dentro de una variable u otra estructura.
+      La función solo existe a partir del momento en que el código llega a esa línea.</p>
+
+    <h4>Ejemplo cotidiano:</h4>
+    <p>Es como apuntar el teléfono de alguien en un papel justo cuando lo necesitas.
+      Hasta que no lo escribes, no puedes usarlo.</p>
+
+    <pre><code class="language-javascript">
+// Expresión de función
+saludar("Ana"); // Error: aún no existe
+
+let saludar = function(nombre) {
+    console.log(`Hola, ${nombre}`);
+};
+
+saludar("Ana"); // Funciona
+</code></pre>
+
+    <h3>Diferencia de alcance (scope)</h3>
+    <p>En modo estricto, si una Declaración de Función está dentro de un bloque (por ejemplo, dentro de un <code>if</code>),
+      solo se puede usar dentro de ese bloque.</p>
+
+    <pre><code class="language-javascript">
+let edad = 20;
+
+if (edad < 18) {
+    function bienvenida() {
+        console.log("Hola joven");
+    }
+} else {
+    function bienvenida() {
+        console.log("Bienvenido adulto");
+    }
+}
+
+// Fuera del bloque, esto dará error:
+bienvenida(); // Error: no está definida
+</code></pre>
+
+    <h3>Solución con Expresión de Función</h3>
+    <p>Podemos declarar la variable fuera del bloque y luego asignarle la función dentro.</p>
+
+    <pre><code class="language-javascript">
+let edad = 20;
+let bienvenida;
+
+if (edad < 18) {
+    bienvenida = function() {
+        console.log("Hola joven");
+    };
+} else {
+    bienvenida = function() {
+        console.log("Bienvenido adulto");
+    };
+}
+
+bienvenida(); // Funciona
+</code></pre>
+
+    <h3>Resumen</h3>
+    <ul>
+      <li><strong>Declaración de Función</strong>: puede usarse antes de escribirla, gracias al <em>hoisting</em>.</li>
+      <li><strong>Expresión de Función</strong>: solo existe después de llegar a esa línea de código.</li>
+      <li>Usa Declaración de Función como primera opción, salvo que necesites declarar funciones de forma condicional o con un alcance más controlado.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. ¿Qué es la palabra clave "this" en JS?</h2>
+
+    <img src="https://media.istockphoto.com/id/1483840130/es/foto/tecnolog%C3%ADa-digital-concepto-de-desarrollo-de-software-programador-de-codificaci%C3%B3n-ingeniero-de.jpg?s=612x612&w=0&k=20&c=_E7peo0WNi4XhUb1hnxYH-re0SsxkUU4gBt7r1tofjQ=" alt="Programador trabajando con JavaScript" width="300" style="display:block; margin:10px auto;">
+
+    <h3>La palabra clave <code>this</code> en JavaScript</h3>
+
+    <p>En JavaScript, <code>this</code> es una palabra clave que <strong>siempre hace referencia a un objeto</strong>. Ese objeto puede cambiar dependiendo de <strong>cómo y dónde</strong> se use.</p>
+
+    <p>Podemos imaginarlo como cuando decimos <strong>"yo"</strong> en la vida real: el significado de "yo" cambia según quién lo diga. En JavaScript, <code>this</code> funciona igual: su valor depende de quién "hable" (quién ejecute el código).</p>
+
+    <h4>Casos prácticos en aplicaciones de oficina</h4>
+
+    <p><strong>¿Dónde usamos <code>this</code> en el mundo real?</strong> Aquí algunos ejemplos típicos:</p>
+
+    <p><strong>1. Sistema de empleados:</strong></p>
+    <pre><code>let empleado = {
+    nombre: "Juan Pérez",
+    departamento: "Ventas",
+    salario: 3000,
+    
+    calcularBonus: function() {
+        return this.salario * 0.1; // 10% del salario
+    },
+    
+    mostrarInfo: function() {
+        return `${this.nombre} trabaja en ${this.departamento}`;
+    }
+};
+
+console.log(empleado.calcularBonus()); // 300
+console.log(empleado.mostrarInfo()); // "Juan Pérez trabaja en Ventas"</code></pre>
+
+    <p><strong>2. Carrito de compras:</strong></p>
+    <pre><code>let carrito = {
+    productos: [],
+    total: 0,
+    
+    agregarProducto: function(producto, precio) {
+        this.productos.push({nombre: producto, precio: precio});
+        this.total += precio;
+    },
+    
+    mostrarResumen: function() {
+        return `Tienes ${this.productos.length} productos por €${this.total}`;
+    }
+};
+
+carrito.agregarProducto("Portátil", 800);
+carrito.agregarProducto("Ratón", 25);
+console.log(carrito.mostrarResumen()); // "Tienes 2 productos por €825"</code></pre>
+
+    <p><strong>3. Formularios dinámicos:</strong></p>
+    <pre><code>// En una página web, cada botón conoce sus propios datos
+document.querySelectorAll('.boton-departamento').forEach(boton => {
+    boton.addEventListener('click', function() {
+        // 'this' se refiere al botón que fue clickeado
+        let departamento = this.dataset.departamento;
+        mostrarEmpleados(departamento);
+    });
+});</code></pre>
+
+    <p><strong>4. Creación de múltiples facturas:</strong></p>
+    <pre><code>function Factura(cliente, numero) {
+    this.cliente = cliente;
+    this.numero = numero;
+    this.productos = [];
+    this.fecha = new Date();
+    
+    this.agregarLinea = function(producto, cantidad, precio) {
+        this.productos.push({
+            producto: producto,
+            cantidad: cantidad, 
+            precio: precio,
+            subtotal: cantidad * precio
+        });
+    };
+    
+    this.calcularTotal = function() {
+        return this.productos.reduce((total, linea) => {
+            return total + linea.subtotal;
+        }, 0);
+    };
+}
+
+// Crear facturas para diferentes clientes
+let factura1 = new Factura("Empresa ABC", "F-001");
+let factura2 = new Factura("Empresa XYZ", "F-002");
+
+factura1.agregarLinea("Consultoría", 5, 100);
+factura2.agregarLinea("Software", 1, 500);
+
+console.log(factura1.calcularTotal()); // 500
+console.log(factura2.calcularTotal()); // 500</code></pre>
+
+    <p><strong>¿Qué nos aporta <code>this</code>?</strong></p>
+    <ul>
+      <li><strong>Reutilización:</strong> El mismo código funciona para diferentes objetos</li>
+      <li><strong>Organización:</strong> Cada objeto mantiene sus propios datos y métodos</li>
+      <li><strong>Escalabilidad:</strong> Podemos crear fácilmente múltiples instancias (empleados, facturas, etc.)</li>
+      <li><strong>Mantenimiento:</strong> Los cambios en un objeto no afectan a otros</li>
+    </ul>
+
+    <h4>1. En el contexto global</h4>
+    <p>Si usamos <code>this</code> fuera de cualquier función o clase, hace referencia al objeto global del entorno:</p>
+
+    <pre><code>console.log(this); 
+// En un navegador: window
+// En Node.js: global</code></pre>
+
+    <p><strong>Modo estricto:</strong> Cuando escribes JavaScript en modo estricto (<code>"use strict";</code>), <code>this</code> será <code>undefined</code> en lugar del objeto global.</p>
+
+    <p><i>Ejemplo de la vida real:</i> Es como estar en una sala grande y decir "yo estoy aquí". Como no perteneces a ningún grupo específico, te refieres a ti mismo en el contexto general de toda la sala.</p>
+
+    <h4>2. Dentro de un objeto (método)</h4>
+    <p>Cuando usamos <code>this</code> dentro de un método de un objeto, hace referencia al <strong>objeto que contiene ese método</strong>:</p>
+
+    <pre><code>let mascota = {
+    nombre: "Pintto",
+    tipo: "perro",
+    presentarse: function() {
+        console.log(`Hola, soy ${this.nombre} y soy un ${this.tipo}`);
+    }
+};
+
+mascota.presentarse(); 
+// Resultado: "Hola, soy Pintto y soy un perro"</code></pre>
+
+    <p><i>Ejemplo de la vida real:</i> Si Pintto pudiera hablar y dijera "yo ladro", todos entenderían que "yo" se refiere a Pintto, no a su dueño.</p>
+
+    <h4>3. Dentro de una función normal</h4>
+    <p>En funciones normales (que no son métodos de un objeto), <code>this</code> apunta al objeto global:</p>
+
+    <pre><code>function saludar() {
+    console.log("Hola desde:", this);
+}
+
+saludar(); 
+// Muestra el objeto global (window en navegador)</code></pre>
+
+    <p><i>Ejemplo de la vida real:</i> Es como una persona que trabaja de forma independiente (freelancer). Cuando dice "yo trabajo", no representa a ninguna empresa específica, actúa por su cuenta.</p>
+
+    <h4>4. En constructores y clases</h4>
+    <p>Cuando usamos <code>new</code> para crear objetos, <code>this</code> hace referencia al <strong>nuevo objeto que se está creando</strong>:</p>
+
+    <pre><code>function Auto(marca, modelo) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.describir = function() {
+        return `Soy un ${this.marca} ${this.modelo}`;
+    };
+}
+
+let miAuto = new Auto("Toyota", "Corolla");
+console.log(miAuto.describir()); 
+// "Soy un Toyota Corolla"</code></pre>
+
+    <p><i>Ejemplo de la vida real:</i> Es como cuando nace un bebé. Al momento de nacer, cuando eventualmente diga "yo", se referirá a sí mismo, a su nueva identidad individual.</p>
+
+    <h4>5. Con funciones flecha</h4>
+    <p>Las funciones flecha son especiales: <strong>NO tienen su propio <code>this</code></strong>. En su lugar, toman el <code>this</code> del lugar donde fueron definidas (no donde se ejecutan).</p>
+
+    <p>Veamos la diferencia:</p>
+
+    <pre><code>let persona = {
+    nombre: "María",
+    saludar: function() {
+        console.log(`Función normal: ${this.nombre}`); // María ✓
+    },
+    despedirse: () => {
+        console.log(`Función flecha: ${this.nombre}`); // undefined ✗
+    }
+};
+
+persona.saludar();    // "Función normal: María"
+persona.despedirse(); // "Función flecha: undefined"</code></pre>
+
+    <p><strong>¿Por qué pasa esto?</strong></p>
+    <ul>
+      <li>La <strong>función normal</strong> (<code>saludar</code>) crea su propio <code>this</code> que apunta al objeto <code>persona</code></li>
+      <li>La <strong>función flecha</strong> (<code>despedirse</code>) fue creada en el contexto global, entonces usa el <code>this</code> global (que no tiene propiedad <code>nombre</code>)</li>
+    </ul>
+
+    <p>Un ejemplo más claro de cuándo sí funciona la función flecha:</p>
+
+    <pre><code>let persona = {
+    nombre: "María",
+    saludarTodos: function() {
+        let amigos = ["Ana", "Luis"];
+        
+        // Función flecha DENTRO de un método
+        amigos.forEach(amigo => {
+            console.log(`${this.nombre} saluda a ${amigo}`);
+            // Aquí this.nombre SÍ funciona porque hereda 
+            // el 'this' de saludarTodos()
+        });
+    }
+};
+
+persona.saludarTodos();
+// "María saluda a Ana"
+// "María saluda a Luis"</code></pre>
+
+    <p><i>Ejemplo de la vida real:</i> Una función flecha es como un asistente que no tiene identidad propia: siempre habla en nombre de su jefe. Si el asistente trabaja para el director, dirá "yo (el director) apruebo esto". Si trabaja de forma independiente, no puede decir "yo apruebo" porque no tiene autoridad propia.</p>
+
+    <h4>Resumen</h4>
+    <ul>
+      <li><code>this</code> es como decir "yo" en programación</li>
+      <li><strong>En métodos de objetos:</strong> "yo" soy el objeto que me contiene</li>
+      <li><strong>En funciones normales:</strong> "yo" soy el contexto global</li>
+      <li><strong>Con <code>new</code>:</strong> "yo" soy el nuevo objeto que se está creando</li>
+      <li><strong>En funciones flecha:</strong> "yo" soy heredado de donde fui creada</li>
+    </ul>
+
+    <p><strong>Consejo práctico:</strong> Cuando te confundas con <code>this</code>, pregúntate: "¿Quién está ejecutando este código en este momento?" Esa será tu respuesta.</p>
+  </section>
+  </section>
+</body>
+
+</html>
+</section>
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
